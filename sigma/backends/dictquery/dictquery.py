@@ -129,7 +129,7 @@ class DictQueryBackend(TextQueryBackend):
         SigmaCompareExpression.CompareOperators.GTE: ">=",
     }
 
-    field_equals_field_expression: ClassVar[str] = "{field1} == {field2}"  # Field equals field expression
+    field_equals_field_expression: ClassVar[str] = "{field1} == `{field2}`"  # Field equals field expression
     # Null/None expressions
     # Expression for field has null value as format string with {field} placeholder for field name
     field_null_expression: ClassVar[str] = "{field} is null"
